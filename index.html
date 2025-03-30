@@ -7,7 +7,7 @@
     <title>Akaspreet Portfolio</title>
     <link rel="icon" href="logo_hai1.png" type="png">
     <link rel="stylesheet" href="style.css">
-    
+
 
     <!-- <script src="https://kit.fontawesome.com/4ea6e3ab0b.js" crossorigin="anonymous"></script> -->
 
@@ -26,14 +26,16 @@
             </a>
             <!-- <img src="logo_transparent.png" alt="logo is not loading" class="logo"> -->
 
-            
-            
+
+
             <ul id="sidemenu">
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#results">Results</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact">CV</a></li>
+
                 <!-- <i class="fas fa-times" onclick="closemenu()"></i> -->
                 <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
             </ul>
@@ -45,7 +47,9 @@
         <div class="header-text" data-aos="fade-right">
             <!-- <p>UI/UX Designer</p> -->
             <div>
-                <h1>Hi, I'm <span>Akaspreet</span><br>from Punjab, India.</h1>
+                <!-- <h1>Hi, I'm <span>Akaspreet</span><br>from Punjab, India.</h1> -->
+                <h1>Hi, I'm <span>Akaspreet</span><br><span class="typing-text"></span></h1>
+
             </div>
         </div>
     </div>
@@ -56,11 +60,11 @@
         <div class="row">
             <div class="about-col-1" data-aos="fade-left">
             <!-- <div class="about-col-1"> -->
-            
+
                 <div class="slide">
                     <img src="out1.jpg" alt="sorry unable to load, please try once again...">
                 </div>
-                <!-- 
+                <!--
                 <div class="slide">
                     <img src="asd10.jpg" alt="">
                 </div>
@@ -68,7 +72,7 @@
                 <!-- <div class="slide"> -->
                     <!-- <img src="asd (5).jpg" alt=""> -->
                 <!-- </div> -->
-                <!--  
+                <!--
                 <div class="slide">
                     <img src="asd (10).jpg" alt="">
                 </div>
@@ -87,14 +91,20 @@
                     I am committed to learning and self- development so that I can consistently achieve better results and
 have been able to deliver a consistent approach throughout a challenging period of development.
                 </p> -->
-                <p>Passionate software developer crafting elegant solutions to empower users and drive innovation. With a 
-                    strong foundation in computer science and lifelong learning, I tackle challenges, create transformative 
-                    experiences, and ensure code scalability. Committed to impactful applications that enhance lives, I thrive 
+                <!-- <p>Passionate software developer crafting elegant solutions to empower users and drive innovation. With a
+                    strong foundation in computer science and lifelong learning, I tackle challenges, create transformative
+                    experiences, and ensure code scalability. Committed to impactful applications that enhance lives, I thrive
                     in collaboration and effective communication, bridging the gap between technical and non-technical teams.
+                </p> -->
+                <p>Innovative ML Engineer with a passion for harnessing cutting-edge Machine Learning and Data Science to drive transformative solutions.
+                    Building on a solid foundation in Computer and Software Engineering, I design and deploy intelligent, scalable solutions that transform complex data into actionable insights. Whether it's optimizing algorithms or bridging the gap between technical intricacies and real-world applications, I thrive on solving challenges with creativity and precision.
+                    With expertise spanning machine learning, deep learning, and adaptive technologies, I have a proven track record of translating complex algorithmic challenges into scalable, impactful solutions that drive meaningful technological advancements.
+                    My journey is fueled by a commitment to continuous learning and collaboration, leveraging emerging technologies to empower users and elevate business outcomes.
                 </p>
-                
+
                 <div class="tab-titles">
                     <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Work Experience</p>
                     <p class="tab-links" onclick="opentab('position of responsibility')">Position of Responsibility</p>
                     <p class="tab-links" onclick="opentab('education')">Education</p>
                     <p class="tab-links" onclick="opentab('certifications')">Certifications</p>
@@ -102,24 +112,71 @@ have been able to deliver a consistent approach throughout a challenging period 
                 </div>
                 <div class="tab-contents active-tab" id="skills">
                     <ul>
-                        <li><span>Programming Languages</span><br>C, C++, Python, HTML, CSS, JavaScript(Web Development)</li>
-                        <li><span>Database Management</span><br>SQL, MongoDB</li>
+                        <li><span>Programming Languages</span><br>C, C++, Python, SQL</li>
+                        <li><span>ML/AI Frameworks</span><br>PyTorch, Langchain, Langsmith, Langgraph, Langflow, OpenCV, YOLO</li>
+                        <li><span>Vector Databases</span><br>Milvus(Standalone),Weaviate, Elasticsearch</li>
+                        <li><span>Data Preprocessing</span><br>Pandas, Matplotlib, Plotly, Scikit-learn</li>
+                        <li><span>Web Development</span><br>Flask, FastAPI, Bootstrap, HTML, CSS, JavaScript(basic)</li>
+                        <li><span>Database</span><br>MySQL, SQLite, MongoDB, Database Management Systems</li>
+                        <li><span>Version Control</span><br>Git, Github, Bitbucket</li>
                         <li><span>IT Constructs:</span><br>Data Structure and Algorithms, OOPS, Operating System, Database Management System</li>
-                        <li><span>Software and Libraries</span><br>Numpy, Pandas, Tensorflow, Pyautogui, YOLO, OpenCV, MySQL, Microsoft Office</li>
-                        <li><span>Soft Skills</span><br>Leadership, Team Work, Problem Solving, Analytics Skills, Communication, Presentation, Adaptability,
-                            Decision Making, Critical Thinking, Networking</li>
-
+                        <li><span>Operating Systems</span><br>Windows, Linux(Ubuntu)</li>
+                        <li><span>AI/ML</span><br>Machine Learning, Natural Language Processing, Computer Vision, Generative AI, Object Detection and Localization, RAG</li>
+                        <li><span>Professional Skills</span><br>Analytical Thinking, Technical Leadership, Cross-functional Collaboration, Project Management</li>
                     </ul>
                 </div>
 
-                <div class="tab-contents" id="position of responsibility">
+                <div class="tab-contents" id="experience">
                     <ul>
-                        <li><span>Mentor at FROSH, TIET(Event Organizer)</span><br>Orchestrated multiple events at the institute level for the entire college, including the Freshman Welcome. <br><br>Facilitated multiple workshops for incoming students and assisted them in adjusting to college life.                            
+                        <li><strong>Software Engineer(AI/ML) at Unthinkable Solutions (Daffodil Softwares), Gurugram(Haryana)</strong><br>
+                            <span>June, 2024 - Present</span>
+                        </li>
+                        <ul>
+                            <li>Engineered and optimized end-to-end AI/ML solutions and Python backends for healthcare and enterprise clients, improving model accuracy by 11.4% while maintaining strict data compliance standards.</li>
+                            <li>Developed a breakthrough NLP-powered chatbot for a leading Homeopathy company ($13.5M revenue), integrating with their existing customer service framework and increasing customer engagement.</li>
+                            <li>Architected and deployed an on-premise LLM-based chatbot solution for India’s largest automobile manufacturer, enabling secure knowledge access across multiple manufacturing stations.</li>
+                            <li>Built scalable digital learning and job-hunting platforms for a government organization, engineering solutions capable of handling millions of concurrent users while maintaining system reliability.</li>
+                            <li>Led multiple client onboarding processes, including technical documentation and RFQ preparation, coordinating with cross-functional teams to align technical solutions with business requirements.</li>
+                            <li>Established ML model lifecycle management practices from data ingestion and feature engineering to deployment and performance monitoring, ensuring consistent quality across all AI/ML initiatives.</li>
+                        </ul>
+                    </ul>
+                    <br>
+                    <ul>
+                        <li><strong>Data Analyst Intern at National Informatics Cenre(NIC), New Delhi</strong><br>
+                            <span>Junuary, 2024 - June, 2024</span>
+                            <br>
+                            <a href="https://drive.google.com/file/d/1e2L4TrKcD3woDA2YgzdyEs6Zh1-bogct/view?usp=sharing" target="_blank">Certificate</a>
+                        </li>
+                        <ul>
+                            <li>Led ANPR system dev, enhancing speed & accuracy contributing to <strong>One Nation, One Challan</strong> initiative.</li>
+                            <li>Analyzed vast Indian challan data, extracting insights to understand traffic complexities globally.</li>
+                            <li>Used analytics to process 50 Million+ challan entries, categorizing into 12 segments for visualization.</li>
+                            </ul>
+                    </ul>
+
+                    <!-- <ul>
+                        <li><span>Software Engineer(AI/ML) at Unthinkable Solutions(Daffodil Softwares)</span><br><span>June, 2024 - Present</span><br>Engineered and optimized end-to-end AI/ML solutions and Python backends for healthcare and enterprise clients, improving model accuracy by 11.4% while maintaining strict data compliance standards.<br>Developed a breakthrough NLP-powered chatbot for a leading Homeopathy company ($13.5M revenue),integrating with their existing customer service framework and increasing customer engagement.<br>
+                            Architected and deployed an on-premise LLM-based chatbot solution for India’s largest automobile manufacturer, enabling secure knowledge access across multiple manufacturing stations.<br>
+                            Built scalable digital learning and job-hunting platforms for a government organization, engineering solutions capable of handling millions of concurrent users while maintaining system reliability.<br>
+                            Led multiple client onboarding processes including technical documentation and RFQ preparation, coordinating with cross-functional teams to align technical solutions with business requirements.<br>
+                            Established ML model lifecycle management practices from data ingestion and feature engineering to deployment and performance monitoring, ensuring consistent quality across all AI/ML initiatives.
                             </li>
                             <a href="https://drive.google.com/drive/folders/1z1zLAEeVD54u1AZRy86r-VDZmBoICQMS" target="_blank">Certificate</a>
                         <li><span>Core Member at MARS , TIET(Lead Member)</span><br>Conducted orientation and oversaw recruitment processes for the entire incoming class. <br><br> Acquired knowledge of the fundamental principles and operations of the Skylark drone.
                         </li>
-            
+
+
+                    </ul> -->
+                </div>
+
+                <div class="tab-contents" id="position of responsibility">
+                    <ul>
+                        <li><span>Mentor at FROSH, TIET(Event Organizer)</span><br>Orchestrated multiple events at the institute level for the entire college, including the Freshman Welcome. <br><br>Facilitated multiple workshops for incoming students and assisted them in adjusting to college life.
+                            </li>
+                            <a href="https://drive.google.com/drive/folders/1z1zLAEeVD54u1AZRy86r-VDZmBoICQMS" target="_blank">Certificate</a>
+                        <li><span>Core Member at MARS , TIET(Lead Member)</span><br>Conducted orientation and oversaw recruitment processes for the entire incoming class. <br><br> Acquired knowledge of the fundamental principles and operations of the Skylark drone.
+                        </li>
+
 
                     </ul>
                 </div>
@@ -128,7 +185,7 @@ have been able to deliver a consistent approach throughout a challenging period 
 
                 <div class="tab-contents" id="education">
                     <ul>
-                        <li><span>2020 - Current</span><br>B.E in Computer Engineering at THAPAR INSTITUTE OF ENGINEERING AND TECHNOLOGY(TIET)</li>
+                        <li><span>2020-2024</span><br>B.E in Computer Engineering at THAPAR INSTITUTE OF ENGINEERING AND TECHNOLOGY(TIET)</li>
                         <li><span>2018-2020</span><br>Higher Secondary Education at GURUKUL KURUKSHETRA</li>
                         <li><span>2017-2018</span><br>Secondary Education from M S SR SEC SCHOOL JHANSA KURUKSHETRA</li>
 
@@ -137,24 +194,24 @@ have been able to deliver a consistent approach throughout a challenging period 
 
                 <div class="tab-contents" id="certifications">
                     <ul>
-                        <li><span>Python Essentials by Cisco Networking Academy</span>                           
-                            </li>
+                        <li><span>Data Scientist Intern at Psyliq(Remote)</span></li>
+                            <a href="https://drive.google.com/file/d/1R8BksDosX78lNQVjfc2XXuDOJF3sOnO-/view?usp=sharing" target="_blank">LOR</a>
+                        <li><span>Governance Analyst at Goldman Sachs(Virtual Experience Forage)</span></li>
+                            <a href="https://drive.google.com/file/d/1VNcLrchMNwEFviGx8RGxrNo870zvfvzf/view?usp=sharing" target="_blank">Certificate</a>
+                        <li><span>Software Engineering at J.P. Morgan(Virtual Experience Forage)</span></li>
+                            <a href="https://drive.google.com/file/d/1M5_kghdZvd4N4_RT85XzQfV2vmN7u_mk/view?usp=sharing" target="_blank">Certificate</a>
+                        <li><span>Python Essentials by Cisco Networking Academy</span></li>
                             <a href="https://drive.google.com/file/d/1lSs_wWW1f11GrX_WiRGfBmztqHi9RC0L/view" target="_blank">Certificate</a>
-                        <li><span>Secured AIR 5251 rank in 1,37,000 in Coding Kaze 2023 by Coding Ninja</span>
-                        </li>
-                        <a href="https://drive.google.com/file/d/1DuP8U7vs3LgWfo-1bhLLjCltxZqc7Bbl/view" target="_blank">Certificate</a>
-            
-
+                        <li><span>Secured AIR 5251 rank in 1,37,000 in Coding Kaze 2023 by Coding Ninja</span></li>
+                            <a href="https://drive.google.com/file/d/1DuP8U7vs3LgWfo-1bhLLjCltxZqc7Bbl/view" target="_blank">Certificate</a>
                     </ul>
                 </div>
-
-
 
             </div>
         </div>
     </div>
 </div>
-    
+
 
 
 <div id="projects">
@@ -162,9 +219,114 @@ have been able to deliver a consistent approach throughout a challenging period 
         <h1 class="sub-title">My Projects</h1>
         <div class="projects-list">
             <div data-aos="flip-left">
-                <img src="ml.png" alt="" class="font-links" >
+                <!-- <img src="ml.png" alt="" class="font-links" > -->
+                <!-- <i class="fa-solid fa-code"></i> -->
+                <h2>Rx.AI(Smarter Prescriptions using AI)</h2>
+                <h5>Python, ML, Generative AI, Voice Recognition, Streamlit, Twilio, OCR</h5>
+                <br>
+                <p>Led development of AI-powered healthcare solution with 9+ widgets, reducing prescription creation time by 60% through voice assistance and automating analysis of 1000+ patient records per minute.<br><br>
+                    Developed a patient profiling system that processes medical history in under 5 seconds, boosting diagnosis efficiency by 45% and enabling data-driven treatment recommendations. <br><br>
+                    Implemented prescription management platform, achieving 98% accuracy in medical terminology and reducing patient medication costs by 30% through AI-driven affordable alternatives.
+                </p>
+                <a href="https://github.com/Akaspreet/Rx.AI" target="_blank">Learn more</a>
+            </div>
+
+            <div data-aos="flip-right">
+                <!-- <img src="ml.png" alt="" class="font-links" > -->
+                <!-- <i class="fa-solid fa-code"></i> -->
+                <h2>DPAS (Dynamic Property Analysis and Search)</h2>
+                <h5>Python, Streamlit, Gemini API, SentenceTransformers(all-MiniLM-L6-v2)</h5>
+                <br>
+                <p>Engineered a cutting-edge AI-driven platform using Gemini API, achieving intelligent interpretation of complex natural language queries and automating data analysis for 5000+ property listings.<br><br>
+                    Spearheaded development of a sophisticated property recommendation engine using Transformers, achieving 95% accuracy in matching user preferences with properties via semantic similarity analysis. <br><br>
+                    Orchestrated an end-to-end solution, implementing real-time data preprocessing and interactive visualizations that reduced property search time by 60% and enhanced user decision-making.
+                </p>
+                <a href="https://github.com/Akaspreet/DPAS" target="_blank">Learn more</a>
+            </div>
+
+            <div data-aos="flip-left">
+                <!-- <img src="ml.png" alt="" class="font-links" > -->
+                <!-- <i class="fa-solid fa-code"></i> -->
+                <h2>Ticketing Support System</h2>
+                <h5>Python, Flask, Langchain, FastAPI, Elasticsearch, Langsmith, Langflow</h5>
+                <br>
+                <p>Engineered a high-performance ticketing support system using OpenAI APIs, LangChain, and LangSmith that intelligently responds to user queries from an existing knowledge base and creates tickets for unaddressed questions, handling 10M+ active users monthly.<br><br>
+                    Implemented comprehensive token usage tracking and performance monitoring through LangSmith and Langfuse integration, providing real-time insights on latency, token consumption, and tool call efficiency to optimize response time and cost.<br><br>
+                    Developed a resilient system architecture with session management, secure user verification (email/phone OTP), streaming responses, and interruption handling capability, resulting in 30% faster query resolution times.
+                </p>
+                <a href="https://github.com/Akaspreet/Ticketing-Support-System" target="_blank">Learn more</a>
+            </div>
+
+            <div data-aos="flip-right">
+                <!-- <img src="ml.png" alt="" class="font-links" > -->
+                <!-- <i class="fa-solid fa-code"></i> -->
+                <h2>Homeopathic AI Assistant</h2>
+                <h5>Python, NLP, OPENAI, Flask, Weaviate, MySQL</h5>
+                <br>
+                <p>Engineered Advanced AI-Driven Medical Platform by fine-tuning ChatGPT-3.5 Turbo to synthesize complex homeopathic medical information, enabling precise natural language querying of historical literature.<br><br>
+                    Developed machine learning techniques to transform unstructured medical texts into structured knowledge repositories, achieving 97% classification accuracy through advanced vectorization strategies.<br><br>
+                    Developed a Flask app with Agentic AI, leveraging RAG-powered filtering and bias detection to cut practitioner research time by 60%, enhancing medical knowledge discovery.
+                </p>
+                <!-- <a href="https://github.com/Akaspreet/Traffix" target="_blank">Learn more</a> -->
+            </div>
+
+            <div data-aos="flip-left">
+                <!-- <img src="ml.png" alt="" class="font-links" > -->
+                <!-- <i class="fa-solid fa-code"></i> -->
+                <h2>ON PREMISE LLM Chatbot</h2>
+                <h5>Python, Flask, FastAPI, Milvus(Standalone), PostgreSQl, gte-large, OLLAMA qwen2.5:7b</h5>
+                <br>
+                <p>Engineered a multi-modal AI chatbot framework using open-source LLMs, integrating text-to-image generation, image captioning, and intelligent multi-source information retrieval on CPU infrastructure<br><br>
+                    Developed an advanced agentic blueprint with sophisticated NLP capabilities, enabling dynamic query resolution and comprehensive insight extraction across interconnected datasets<br><br>
+                    Created a versatile AI platform that synthesizes information from multiple sources, delivering intelligent, context-aware responses with optimized local performance
+                </p>
+                <!-- <a href="https://github.com/Akaspreet/Fitness-360" target="_blank">Learn more</a> -->
+            </div>
+
+            <div data-aos="flip-right">
+                <!-- <img src="ml.png" alt="" class="font-links" > -->
+                <!-- <i class="fa-solid fa-code"></i> -->
+                <h2>Traffix: Intelligent Traffic Control Solution</h2>
+                <h5>Python, Computer Vision, SUMO, SQLite, Twilio, Machine Learning</h5>
+                <br>
+                <p>Implemented real-time green light adjustments with genetic algorithms, reducing traffic delays by 25%.<br><br>
+                    Implemented traffic optimization at a four-way, three-lane intersection, increasing intersection throughput by 30%.<br><br>
+                    Conduct an investigation or audit to ascertain if there have been any breaches or infractions.
+                </p>
+                <a href="https://github.com/Akaspreet/Traffix" target="_blank">Learn more</a>
+            </div>
+
+            <div data-aos="flip-left">
+                <!-- <img src="ml.png" alt="" class="font-links" > -->
+                <!-- <i class="fa-solid fa-code"></i> -->
+                <h2>Fitness 360 Website</h2>
+                <h5>HTML, CSS, JavaScript, Bootstrap, React, Express, Node.js, MongoDB</h5>
+                <br>
+                <p>Let users make their own profiles and keep track of their health goals and progress over time.<br><br>
+                    Aid customers in achieving fitness goals with nutrition advice, meal planning, and healthy recipes.<br><br>
+                    Integrated MongoDB for real-time updates and modifications directly from the frontend.
+                </p>
+                <a href="https://github.com/Akaspreet/Fitness-360" target="_blank">Learn more</a>
+            </div>
+
+            <div data-aos="flip-right">
+                <!-- <img src="ml.png" alt="" class="font-links" > -->
+                <!-- <i class="fa-solid fa-code"></i> -->
+                <h2>Loan Guard</h2>
+                <h5>Python, Machine Learning</h5>
+                <br>
+                <p>Developed a loan assessment model predicting repayment using income and interest rate inputs.<br><br>
+                    Recommended risk mitigation strategies based on a 2.66 ratio to minimize non-repayment risk.<br><br>
+                    Achieved over 91% model accuracy and 96% precision using ensemble techniques.
+                </p>
+                <a href="https://github.com/Akaspreet/Loan-Guard" target="_blank">Learn more</a>
+            </div>
+
+            <div data-aos="flip-left">
+                <!-- <img src="ml.png" alt="" class="font-links" > -->
                 <!-- <i class="fa-solid fa-code"></i> -->
                 <h2>Vehicle Detection</h2>
+                <h5>Python, Machine Learning, OpenCV</h5>
                 <p>Detect and Count different Vechiles from any image or Video. <br><br>
                     Extract number plate of Vechiles and also check Traffic Violation. <br></p>
                 <a href="https://github.com/Akaspreet/Vehicle-Detection" target="_blank">Learn more</a>
@@ -172,116 +334,15 @@ have been able to deliver a consistent approach throughout a challenging period 
 
             <div data-aos="flip-right">
                 <!-- <i class="fa-solid fa-crop"></i> -->
-                <img src="coding.png" alt="" class="font-links">
+                <!-- <img src="coding.png" alt="" class="font-links"> -->
 
                 <h2>Automatic Smile Capturer</h2>
+                <h5>Python, Machine Learning, OpenCV</h5>
                 <p>Detect face and detect lips when it is smile position specific. <br><br>
                     Click the picture. <br> <br>
                     Save the Image with specific format and with date and time stamps. <br>
                     </p>
                 <a href="https://github.com/Akaspreet/Smile-Capture" target="_blank">Learn more</a>
-            </div>
-
-            <div data-aos="flip-left">
-                <!-- <i class="fa-brands fa-app-store"></i> -->
-                <img src="python_org.png" alt="" class="font-links" >
-
-                <h2>Grey-Scale Conversion</h2>
-                <p>Convert any image or video into greyscale as much needed. <br><br>
-                    Show image in different sizes without affecting the size of pixels. <br><br>
-                    Increase the playback speed of any video. <br></p>
-                <a href="https://github.com/Akaspreet/Grey-Scale-Conversion" target="_blank">Learn more</a>
-            </div>
-
-            <div data-aos="flip-right">
-                <!-- <i class="fa-brands fa-app-store"></i> -->
-                <img src="learning.png" alt="" class="font-links" >
-
-                <h2>Perfect Match</h2>
-                <p>First user select his or her image who wants perfect match. <br><br>
-                    We convert image into hash code. <br><br>
-                    The difference between user and from our database images
-                    minimum we show the final image together in one frame <br></p>
-                <a href="https://github.com/Akaspreet/Hookups" target="_blank">Learn more</a>
-            </div>
-
-            <div data-aos="flip-left">
-                <!-- <i class="fa-brands fa-app-store"></i> -->
-                <img src="ml3.png" alt="" class="font-links" >
-
-                <h2>Drowsiness Detection</h2>
-                <p>Detect the drowsiness of driver by detecting blinking of both eyes. <br><br>
-                    When user don't open eyes for some seconds. <br><br>
-                    The beep sound start playing to give a alert. <br></p>
-                <a href="https://github.com/Akaspreet/Drowsiness" target="_blank">Learn more</a>
-            </div>
-
-            <div data-aos="flip-right">
-                <!-- <i class="fa-brands fa-app-store"></i> -->
-                <img src="ml2.png" alt="" class="font-links" >
-
-                <h2>Images Classification</h2>
-                <p>First we download the dataset and train our machine on that model. <br><br>
-                    Then normalize it and validate it. <br><br>
-                    Finally check the accuracy on our test datasets. <br></p>
-                <a href="https://github.com/Akaspreet/Image-Classification" target="_blank">Learn more</a>
-            </div>
-
-            <div data-aos="flip-left">
-                <!-- <i class="fa-brands fa-app-store"></i> -->
-                <img src="opencv-removebg.png" alt="" class="font-links" >
-
-                <h2>OpenCV</h2>
-                <p>Here we perform some basic image processing functions of OpenCV. <br><br>
-                    Like Image Thresholding, Resizing, Reshaping, Mouse Operations etc. <br><br>
-                    <!-- Finally check the accuracy on our test datasets. <br></p> -->
-                <a href="https://github.com/Akaspreet/OpenCV-Projects" target="_blank">Learn more</a>
-            </div>
-            <div data-aos="flip-right">
-                <!-- <i class="fa-brands fa-app-store"></i> -->
-                <img src="ml3.png" alt="" class="font-links" >
-                <!-- <i class="fa-brands fa-chrome"></i> -->
-
-                <h2>Fitness 360</h2>
-                <p>Allow users to create personalized profiles where they can track their fitness goals, and progress over time.
-                    <br><br>
-                    To assist customers achieve fitness objectives, offer nutrition advice, meal planning, and healthy recipes. <br><br>
-                    <!-- Finally check the accuracy on our test datasets. <br></p> -->
-                <a href="https://github.com/Akaspreet/Fitness-360" target="_blank">Learn more</a>
-            </div>
-            <div data-aos="flip-left">
-                <!-- <i class="fa-brands fa-app-store"></i> -->
-                <img src="learning.png" alt="" class="font-links" >
-                <!-- <i class="fa-brands fa-chrome"></i> -->
-
-                <h2>Automated-Bike-Car-Price-Evaluator</h2>
-                <p>Computerized system that determines the value of pre-owned motorbike using image and sound resemblance.
-                    <br><br>
-                    Images compared via structure and ORB similarity, audio analyzed with acoustid and chromaprint <br><br>
-                    <!-- Finally check the accuracy on our test datasets. <br></p> -->
-                <a href="https://github.com/Akaspreet/Automated-Bike-Car-Price-Evaluator" target="_blank">Learn more</a>
-            </div>
-            <div data-aos="flip-right">
-                <!-- <i class="fa-brands fa-app-store"></i> -->
-                <img src="ml2.png" alt="" class="font-links" >
-                <!-- <i class="fa-brands fa-chrome"></i> -->
-
-                <h2>Loan-Guard</h2>
-                <p>Developed risk assessment model, predicting loan repayment using income and loan interest rate as input
-                    <br><br>
-                    Employed ensemble techniques to achieve model accuracy surpassing 91% and precision exceeding 96%. <br><br>
-                    <!-- Finally check the accuracy on our test datasets. <br></p> -->
-                <a href="https://github.com/Akaspreet/Loan-Guard" target="_blank">Learn more</a>
-            </div>
-            <div data-aos="flip-left">
-                <!-- <i class="fa-brands fa-app-store"></i> -->
-                <img src="learning.png" alt="" class="font-links" >
-
-                <h2>Traffix(Intelligent Traffic Management System)</h2>
-                <p>Implemented genetic algorithms to modify green lights in real time, cutting traffic delays by 25%.
-                    <br><br>Optimized traffic flow at a four-way, junction, achieving a 30% increase in intersection throughput.<br><br>
-                    Conduct an investigation or audit to ascertain if there have been any breaches or infractions.  <br></p>
-                <a href="https://github.com/Akaspreet/Traffix" target="_blank">Learn more</a>
             </div>
 
         </div>
@@ -293,6 +354,52 @@ have been able to deliver a consistent approach throughout a challenging period 
     <div class="container" data-aos="zoom-in">
         <h1 class="sub-title">My Work</h1>
         <div class="work-list" data-aos="zoom-in-up">
+
+            <div class="work">
+                <!-- <img src="mybg.jpeg" alt="unable to load!"> -->
+                <!-- <video autoplay src="vechile_detection.mp4"></video> -->
+
+                <video autoplay muted loop>
+                    <source src="rxai.mp4" type="video/mp4">
+                </video>
+
+                <div class="layer">
+                    <h3>Rx.AI(Smarter Prescriptions using AI)</h3>
+                    <p>Rx.AI is an innovative solution that revolutionizes the way prescriptions are managed, created, and understood by both doctors and patients. Our platform leverages AI to solve multiple pain points in the healthcare prescription ecosystem.</p>
+                    <a href="https://github.com/Akaspreet/Rx.AI" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <!-- <img src="mybg.jpeg" alt="unable to load!"> -->
+                <!-- <video autoplay src="vechile_detection.mp4"></video> -->
+
+                <video autoplay muted loop>
+                    <source src="dpas1.mp4" type="video/mp4">
+                </video>
+
+                <div class="layer">
+                    <h3>Dynamic Property Analysis and Search</h3>
+                    <p>This project provides a Streamlit-based web application for dynamic property analysis and search. It uses machine learning models and natural language processing to interpret user queries, search property data, and perform analyses.</p>
+                    <a href="https://github.com/Akaspreet/DPAS" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <!-- <img src="mybg.jpeg" alt="unable to load!"> -->
+                <!-- <video autoplay src="vechile_detection.mp4"></video> -->
+
+                <video autoplay muted loop>
+                    <source src="dpas2.mp4" type="video/mp4">
+                </video>
+
+                <div class="layer">
+                    <h3>Dynamic Property Analysis and Search</h3>
+                    <p>This project provides a Streamlit-based web application for dynamic property analysis and search. It uses machine learning models and natural language processing to interpret user queries, search property data, and perform analyses.</p>
+                    <a href="https://github.com/Akaspreet/DPAS" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
             <div class="work">
                 <!-- <img src="mybg.jpeg" alt="unable to load!"> -->
                 <!-- <video autoplay src="vechile_detection.mp4"></video> -->
@@ -308,7 +415,7 @@ have been able to deliver a consistent approach throughout a challenging period 
                 </div>
             </div>
 
-           
+
             <div class="work">
                 <!-- <img src="out1.jpg" alt="unable to load!"> -->
 
@@ -435,32 +542,44 @@ have been able to deliver a consistent approach throughout a challenging period 
                         <li data-color="#e4405f"><a href="https://www.instagram.com/akshpreet_singh2002/" target="_blank" class="instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
                         <li data-color="#0A66C2"><a href="https://www.linkedin.com/in/akaspreet-singh-285794203/" target="_blank" class="linkedin"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a></li>
                         <li data-color="#171515"><a href="https://github.com/Akaspreet" target="_blank" class="github"><i class="fa-brands fa-github" aria-hidden="true"></i></a></li>
-    
-    
-    
+
+
+
                         <!-- <a href="https://www.facebook.com/akshpreet.singh.5205/" target="_blank" class="facebook"><i class="fa-brands fa-facebook"></i></a> -->
                         <!-- <a href="https://wa.me/7206021151" target="_blank" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a> -->
                         <!-- <a href="https://www.instagram.com/akshpreet_singh2002/" target="_blank" class="instagram"><i class="fa-brands fa-instagram"></i></a> -->
                         <!-- <a href="https://www.linkedin.com/in/akaspreet-singh-285794203/" target="_blank" class="linkedin"><i class="fa-brands fa-linkedin"></i></a> -->
                         <!-- <a href="https://github.com/Akaspreet" target="_blank" class="github"><i class="fa-brands fa-github"></i></a> -->
-    
+
                     </ul>
-    
+
                 </section>
-                <a href="Akaspreet.pdf" download class="btn btn2">Download CV</a>
+                <!-- <a href="Akaspreet.pdf" download class="btn btn2">Download CV</a> -->
+                <a href="resumes.zip" download class="btn btn2">Download CV</a>
+
                 <!-- <a href="Akaspreet Resume.pdf" download class="btn btn2">Download CV</a> -->
 
             </div>
             <div class="contact-right" data-aos="fade-right">
-                <form name="submit-to-google-sheet">
+                <!-- <form name="submit-to-google-sheet">
                     <input type="text" name="Name" placeholder="Your Name" required>
                     <input type="email" name="Email" placeholder="Your Email" required>
                     <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form> -->
+
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="b55feb34-de76-40eb-a116-4807507b3ef5">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="6" placeholder="Your Message"></textarea>
                     <button type="submit" class="btn btn2">Submit</button>
                 </form>
                 <span id="msg"></span>
 
             </div>
+
+
         </div>
     </div>
 </div>
@@ -501,7 +620,7 @@ have been able to deliver a consistent approach throughout a challenging period 
     }
 </script>
 
-<script>
+<!-- <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbykse-Zd4Z0dk-YDRfxEBFDj1ru64zgl7WKVjcyes0wcCYgFwZy7s2GQgoereHcdZmsng/exec'
     const form = document.forms['submit-to-google-sheet']
     const msg = document.getElementById("msg")
@@ -518,7 +637,32 @@ have been able to deliver a consistent approach throughout a challenging period 
         })
         .catch(error => console.error('Error!', error.message))
     })
-  </script>
+  </script> -->
+
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbykse-Zd4Z0dk-YDRfxEBFDj1ru64zgl7WKVjcyes0wcCYgFwZy7s2GQgoereHcdZmsng/exec';
+    const form = document.forms['submit-to-google-sheet'];
+    const msg = document.getElementById('msg');
+
+    form.addEventListener('submit', e => {
+        e.preventDefault();
+        fetch(scriptURL, {
+            method: 'POST',
+            body: new FormData(form)
+        })
+        .then(response => {
+            msg.innerHTML = "Message sent successfully!";
+            setTimeout(() => {
+                msg.innerHTML = "";
+            }, 3000);
+            form.reset();
+        })
+        .catch(error => {
+            msg.innerHTML = "Error! Message not sent.";
+            console.error('Error!', error.message);
+        });
+    });
+</script>
 
 
   <script>
@@ -565,7 +709,7 @@ have been able to deliver a consistent approach throughout a challenging period 
     VanillaTilt.init(document.querySelectorAll(".social-icons li a"), {
 		max: 25,
 		speed: 400,
-        glare: true, 
+        glare: true,
         "max-glare": 1,
 	});
   </script>
@@ -582,5 +726,62 @@ have been able to deliver a consistent approach throughout a challenging period 
         })
     })
   </script>
+  <script>
+    // Typing effect script
+    const typingText = document.querySelector('.typing-text');
+    const roles = ['Data Scientist', 'ML Engineer'];
+    let roleIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+
+    function typeEffect() {
+        const currentRole = roles[roleIndex];
+
+        if (isDeleting) {
+            typingText.textContent = currentRole.substring(0, charIndex - 1);
+            charIndex--;
+        } else {
+            typingText.textContent = currentRole.substring(0, charIndex + 1);
+            charIndex++;
+        }
+
+        let typeSpeed = isDeleting ? 50 : 100;
+
+        if (!isDeleting && charIndex === currentRole.length) {
+            typeSpeed = 1500;
+            isDeleting = true;
+        } else if (isDeleting && charIndex === 0) {
+            isDeleting = false;
+            roleIndex = (roleIndex + 1) % roles.length;
+            typeSpeed = 500;
+        }
+
+        setTimeout(typeEffect, typeSpeed);
+    }
+
+    function updateTypingTextColor() {
+        const currentTheme = document.body.classList.contains("dark-theme") ? "dark-theme" : "light-theme";
+        typingText.style.color = getComputedStyle(document.body).getPropertyValue('--secondary-color');
+    }
+
+    // Start the typing effect
+    document.addEventListener('DOMContentLoaded', () => {
+        typeEffect();
+        updateTypingTextColor();
+    });
+
+    icon.onclick = function() {
+        document.body.classList.toggle("dark-theme");
+        if(document.body.classList.contains("dark-theme")){
+            icon.src = "light1.png";
+        }
+        else{
+            icon.src = "moon.png";
+        }
+        updateTypingTextColor(); // Add this line
+    }
+</script>
+
+
 </body>
 </html>
